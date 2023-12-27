@@ -1,5 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        BmiService service = new BmiService();
+        int weightInKg = 55;
+        double highInM = 1.60;
+        int Bmi = service.calculate(weightInKg, highInM);
+
+        System.out.println("Индекс массы тела: " + Bmi);
     }
 }
